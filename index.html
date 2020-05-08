@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="Foodlis/logo.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
+
+<body class="animsition">
+    <style>
+        .dropdown {
+            position: cover;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(105, 105, 105, 0.9);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown1 {
+            position: cover;
+            display: inline-block;
+        }
+        
+        .dropdown1-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(105, 105, 105, 0);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        
+        .dropdown1:hover .dropdown1-content {
+            display: block;
+        }
+    </style>
+    <!-- Header -->
+    <header>
+        <!-- Header desktop -->
+        <div class="wrap-menu-header gradient1 trans-0-4">
+            <div class="container h-full">
+                <div class="wrap_header trans-0-3">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="Foodlis/logo.png" alt="IMG-LOGO" data-logofixed="Foodlis/logo.png">
+                        </a>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="wrap_menu p-l-45 p-l-0-xl">
+                        <nav class="menu">
+                            <ul class="main_menu">
+                                <li>
+                                    <a href="index.html" style="color:rgb(255, 255, 255);font-size:17px;">Home</a>
+                                </li>
+
+                                <li class="dropdown">
+                                    <span style="color:rgb(255, 255, 255);font-size:17px;">MENU</span>
+                                    <ul class="dropdown-content">
+                                        <li><a href="promotion.php" style="color:rgb(255, 255, 255);font-size:17px;">PROMOTION</a></li>
+                                        <li><a href="populamenu.php" style="color:rgb(255, 255, 255);font-size:17px;">เมนูยอดฮิต</a></li>
+                                        <li><a href="menurecommend.php" style="color:rgb(255, 255, 255);font-size:17px;">เมนูแนะนำ</a></li>
+                                        <li><a href="menuall.php" style="color:rgb(255, 255, 255);font-size:17px;">เมนูทั้งหมด</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="contact.html" style="color:rgb(255, 255, 255);font-size:17px;">Contact</a>
+                                </li>
+
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="social flex-w flex-l-m p-r-20">
+                        <!-- <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>-->
+                        <a href="https://www.facebook.com/TheNeverEndingSummer" target="_blank"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+                        <!-- <a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>-->
+
+                        <button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar trans-0-4">
+        <!-- Button Hide sidebar -->
+        <button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+        <!-- - -->
+        <ul class="menu-sidebar p-t-95 p-b-70">
+            <li class="t-center m-b-13">
+                <a href="index.html" class="txt19" style="font-size:17px;">Home</a>
+            </li>
+            <li class="t-center m-b-13">
+                <a href="contact.html" class="txt19" style="font-size:17px;"> Contact</a>
+            </li>
+            <li class="t-center m-b-13">
+                <div class="dropdown1">
+                    <span style="font-size:17px;">MENU</span>
+                    <div class="dropdown1-content">
+                        <a href="promotion.php" style="font-size:17px;">PROMOTION</a> <br>
+                        <a href="populamenu.php" style="font-size:17px;">เมนูยอดฮิต</a><br>
+                        <a href="menurecommend.php" style="font-size:17px;">เมนูแนะนำ</a><br>
+                        <a href="menuall.php" style="font-size:17px;">เมนูทั้งหมด</a><br>
+
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+        </div>
+    </aside>
+
+    <style>
+        .mySlides {
+            display: none
+        }
+        
+        .w3-left,
+        .w3-right,
+        .w3-badge {
+            cursor: pointer
+        }
+        
+        .w3-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0
+        }
+    </style>
+
+
+
+    <section>
+
+        <div class="w3-content w3-display-container" style="max-width:100%;">
+            <a href="menurecommend.php"><img class="mySlides" src="Foodlis/recomj.png" style="width:100%;"></a>
+
+            <img class="mySlides" src="Foodlis/BG.jpg" style="width:100%">
+            <img class="mySlides" src="Foodlis/bg1.png" style="width:100%">
+
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            carousel();
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-white";
+
+            }
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {
+                    slideIndex = 1
+                }
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(carousel, 10000);
+            }
+        </script>
+    </section>
+
+    <section align='center'>
+        <p><br>
+        </p>
+        <h2 align='center'>
+            <B>  Awards </B>
+        </h2>
+        <p><br>
+        </p>
+        <img src="Foodlis/bg10.jpg" style="width:300px; height:200 ;">
+        <p>2019 <br> -The MonocleRestaurant Awards "Winner" <br> By The Monocle Drinking & Dining Directory</p>
+        <p><br>
+        </p>
+        <p>2018 <br> -Thailand Tatler Best Restaurants 2018 <br> The discerning readers of Thailand Tatler have acclaimed THE NEVER ENDING SUMMER as a Thailand Tatler Best Restaurant for its excerptional cuisine and service</p>
+        <p><br>
+        </p>
+        <p>2017 <br> -Thailand Tatler Best Restaurant 2017 <br> The discerning readers of Thailand Tatler have acclaimed THE NEVER ENDING SUMMER as a Thailand Tatler Best Restaurant for its excerptional cuisine and service</p>
+        <p><br>
+        </p>
+        <p>2016 <br> -Thailand Tatler Best Restaurant 2016 <br> The discerning readers of Thailand Tatler have acclaimed THE SUMMER HOUSE PROJECT as a Thailand Tatler Best Restaurant for its excerptional cuisine and service </p>
+        <p><br>
+        </p>
+    </section>
+    <!-- Slide1 
+    <section class="section-slide">
+        <div class="wrap-slick1">
+            <div class="slick1">
+                <a href="menurecommend.html">
+                    <div class="item-slick1 item1-slick1">
+                        <img src="Foodlis/Recommended.jpg" style="width:100%;height:100%;">
+                    </div>
+                </a>
+
+
+                <div class="item-slick1 item2-slick1">
+                    <img src="Foodlis/o.png" style="width:100%;height:100%;">
+                    <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                        <!--      <span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
+                            Welcome to
+						</span>
+
+                        <h3 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+                            The Never Ending Summer
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="item-slick1 item3-slick1">
+                    <img src="Foodlis/ooo.png" style="width:100%;height:100%;">
+                    <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                        <!--  <span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
+							Welcome to
+						</span>
+
+                        <h3 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
+                            The Never Ending Summer
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>-->
+
+    <!-- Welcome -->
+    <!--<section class="section-welcome bg1-pattern p-t-120 p-b-105">
+		<div class="container">
+			<div class="row">
+				<!--<div class="col-md-6 p-t-45 p-b-30">
+					<div class="wrap-text-welcome t-center">
+						<span class="tit2 t-center">
+							Recommended Menu
+						</span>
+
+						<!--<h3 class="tit3 t-center m-b-35 m-t-5">
+							Recommended Menu
+						</h3>
+
+						<h3 class="t-center m-b-22 size3 m-l-r-auto">
+							เมนูแนะนำ
+						</h3>
+
+
+					</div>
+				</div> -->
+
+    <!--<div class="col-md-6 p-b-30">
+					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
+						<a href="menu.html">	<img src="Foodlis/Recommended.jpg" alt="IMG-OUR"></a>
+					</div>
+				</div>-->
+
+
+
+
+
+    <!--	</div>
+		</div>
+	</section>-->
+
+
+
+    <!-- Our menu -->
+
+    <!-- Event -->
+
+
+    <!-- Booking -->
+
+
+    <!-- Review -->
+
+
+    <!-- Video -->
+
+
+
+    <!-- Blog -->
+
+
+
+    <!-- Sign up -->
+
+
+
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <footer class="bg1">
+        <div class="container p-t-40 p-b-70">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 p-t-50">
+                    <!-- - -->
+                    <h4 class="txt13 m-b-33">
+                        Contact Us
+                    </h4>
+
+                    <ul class="m-b-70">
+                        <li class="txt14 m-b-14">
+                            <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i> 41/5 ถนน เจริญนคร แขวง คลองสาน เขตคลองสาน <br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;กรุงเทพมหานคร 10600
+                        </li>
+
+                        <li class="txt14 m-b-14">
+                            <i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i> 02-8610953<br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;02-8612128
+                        </li>
+
+                        <li class="txt14 m-b-14">
+                            <i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>info@theneverendingsummer.com
+
+                        </li>
+                    </ul>
+
+                    <!-- - -->
+                    <h4 class="txt13 m-b-32">
+                        Opening Times
+                    </h4>
+
+                    <ul>
+                        <li class="txt14">
+                            11.00 AM – 11:00 PM
+                        </li>
+
+                        <li class="txt14">
+                            Every Day
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-4 p-t-50"></div>
+
+                <div class="col-sm-6 col-md-4 p-t-50">
+                    <!-- - -->
+                    <h4 class="txt13 m-b-33">
+                        Latest facebook
+                    </h4>
+
+                    <div class="m-b-25">
+                        <span class="fs-13 color2 m-r-5">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</span>
+                        <a href="#" class="txt15">
+
+                        </a>
+
+                        <p class="txt14 m-b-18">
+                            Tasty vegan food with Stir fried tofu with cashew nuts
+                            <a href="https://www.facebook.com/TheNeverEndingSummer/" class="txt15" target="_blank">
+								https://www.facebook.com/TheNeverEndingSummer/
+							</a>
+                        </p>
+
+                        <span class="txt16">
+							
+						</span>
+                    </div>
+
+                    <div>
+                        <span class="fs-13 color2 m-r-5">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</span>
+                        <a href="#" class="txt15">
+
+                        </a>
+
+                        <p class="txt14 m-b-18">
+                            Vegetarian food chinese style with Stir fried rice noddle vegetarian yangshuo
+                            <a href="https://www.facebook.com/TheNeverEndingSummer/" class="txt15" target="_blank">
+								https://www.facebook.com/TheNeverEndingSummer/	
+                            </a>
+                        </p>
+
+                        <span class="txt16">
+							
+						</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="end-footer bg2">
+            <div class="container">
+                <div class="flex-sb-m flex-w p-t-22 p-b-22">
+                    <div class="social flex-w flex-l-m p-r-20">
+                        <!-- <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>-->
+
+                        <a href="https://www.facebook.com/TheNeverEndingSummer" target="_blank"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+                        <!-- <a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>-->
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Back to top -->
+    <div class="btn-back-to-top bg0-hov" id="myBtn">
+        <span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+    </div>
+
+    <!-- Container Selection1 -->
+    <div id="dropDownSelect1"></div>
+
+    <!-- Modal Video 01-->
+    <div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="modal-dialog" role="document" data-dismiss="modal">
+            <div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+
+            <div class="wrap-video-mo-01">
+                <div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
+                <div class="video-mo-01">
+                    <iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick-custom.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+    <script type="text/javascript">
+        $('.parallax100').parallax100();
+    </script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
